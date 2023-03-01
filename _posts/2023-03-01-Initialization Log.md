@@ -1,5 +1,5 @@
 ---
-title: Initialize Log  
+title: Initialization Log  
 date: 2023-03-01 17:18:00 +0800  
 categories: [English, Uncategorized]  
 tags: [jekyll-theme-chirpy]  
