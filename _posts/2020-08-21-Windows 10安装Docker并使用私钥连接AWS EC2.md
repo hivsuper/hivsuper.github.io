@@ -4,7 +4,7 @@ date: 2020-08-21 22:41:00 +0800
 categories: [Chinese, CNBlogs]  
 tags: [docker]  
 ---
-点击<a href="https://www.cnblogs.com/hiver/p/13543739.html" target="_blank">原文</a>  
+<a href="https://www.cnblogs.com/hiver/p/13543739.html" target="_blank">点击查看原文</a>  
 ### 1. 参考资料
 + [ubuntu docker 开启ssh](https://blog.csdn.net/qq_27068845/article/details/77015432)
 + [docker - 容器里安装ssh](https://www.cnblogs.com/sunshine-2015/p/6384471.html)
