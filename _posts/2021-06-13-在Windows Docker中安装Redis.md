@@ -5,7 +5,7 @@ categories: [Chinese, CNBlogs]
 tags: [redis, docker]  
 ---
 点击<a href="https://www.cnblogs.com/hiver/p/14879401.html" target="_blank">原文</a>  
-本文的前提是本地Docker环境已经配置成功，参考[Windows 10安装Docker并使用私钥连接AWS EC2](/posts/Windows-10安装Docker并使用私钥连接AWS-EC2)
+本文的前提是本地Docker环境已经配置成功，参考[Windows 10安装Docker并使用私钥连接AWS EC2](/posts/Windows-10%E5%AE%89%E8%A3%85Docker%E5%B9%B6%E4%BD%BF%E7%94%A8%E7%A7%81%E9%92%A5%E8%BF%9E%E6%8E%A5AWS-EC2)
 ### 1. 参考资料
 + [redis DOCKER OFFICIAL IMAGE](https://hub.docker.com/_/redis)
 + [https://redis.io/topics/config](https://redis.io/topics/config)
