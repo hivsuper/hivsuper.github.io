@@ -4,7 +4,7 @@ date: 2021-06-06 22:25:00 +0800
 categories: [Chinese, CNBlogs]   
 tags: [linux, cloud]  
 ---
-点击<a href="https://www.cnblogs.com/hiver/p/14856667.html" target="_blank">原文</a>  
+<a href="https://www.cnblogs.com/hiver/p/14856667.html" target="_blank">点击查看</a>  
 由于Windows 10升级后无法与VirtualBox兼容，而docker的配置又太过麻烦，今天终于下决心注册一个AWS的帐号。本文介绍：
 * 创建AWS帐号
 * 安装Windows子系统

@@ -10,7 +10,7 @@ Because my operating system for daily use is `Windows 10` and to isolate `Jekyll
 + GitHub Pages with `jekyll-theme-chirpy`
 
 ## Prerequisites
-+ Docker Desktop is [installed](https://www.cnblogs.com/hiver/p/13543739.html)
++ Docker Desktop is [installed](https://hivsuper.github.io/posts/Windows-10安装Docker并使用私钥连接AWS-EC2/)
 
 ## Create GitHub repository
 Refer to [Getting Started](https://chirpy.cotes.page/posts/getting-started/#option-1-using-the-chirpy-starter) to create [hivsuper.github.io](https://github.com/hivsuper/hivsuper.github.io) with the Chirpy Starter as template, then clone it to local.
@@ -25,7 +25,14 @@ docker run -it --privileged=true -p 8080:4000 --name github -v {HOST_PATH}/hivsu
 + Mount the hivsuper.github.io folder where the codes locate to docker container
  
 ### Install Jekyll
-1. Perform the actions on [Jekyll Installation](https://jekyllrb.com/docs/installation/).
+1. Perform the actions on [Jekyll Installation](https://jekyllrb.com/docs/installation/ubuntu/).
+> apt-get update  
+apt-get install ruby-full build-essential zlib1g-dev  
+echo '# Install Ruby Gems to ~/gems' >> ~/.bashrc  
+echo 'export GEM_HOME="$HOME/gems"' >> ~/.bashrc  
+echo 'export PATH="$HOME/gems/bin:$PATH"' >> ~/.bashrc  
+source ~/.bashrc  
+gem install jekyll bundler  
 2. Install Dependencies by running `bundle`
 ```BASH
 root@ffffffffffff:{DOCKER_PATH}/hivsuper.github.io# bundle
