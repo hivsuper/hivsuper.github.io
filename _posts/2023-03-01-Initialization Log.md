@@ -18,7 +18,7 @@ Refer to [Getting Started](https://chirpy.cotes.page/posts/getting-started/#opti
 ## Set up `Jekyll` environment
 
 ### Create docker container
-```BASH
+```
 docker run -it --privileged=true -p 8080:4000 --name github -v {HOST_PATH}/hivsuper.github.io:{DOCKER_PATH}/hivsuper.github.io ubuntu
 ```
 + Map the 8080 port of host machine to 4000 in docker container
@@ -34,7 +34,7 @@ echo 'export PATH="$HOME/gems/bin:$PATH"' >> ~/.bashrc
 source ~/.bashrc  
 gem install jekyll bundler  
 2. Install Dependencies by running `bundle`
-```BASH
+```
 root@ffffffffffff:{DOCKER_PATH}/hivsuper.github.io# bundle
 ```
 
@@ -44,7 +44,7 @@ root@ffffffffffff:{DOCKER_PATH}/hivsuper.github.io# bundle
 
 ## Deploy
 After Installing `giscus`, get `data-repo`, `data-repo-id`, `data-category` and `data-category-id` according to [giscus guide](https://vuepress-theme-hope.github.io/v2/comment/guide/giscus.html) and configure them in [#2](https://github.com/hivsuper/hivsuper.github.io/pull/2). Run `bundle exec jekyll s --host 0.0.0.0` to review pages
-```BASH
+```
 root@ffffffffffff:{DOCKER_PATH}/hivsuper.github.io# bundle exec jekyll s --host 0.0.0.0
 ...
     Server address: http://0.0.0.0:4000/
