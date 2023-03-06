@@ -10,7 +10,7 @@ Because my operating system for daily use is `Windows 10` and to isolate `Jekyll
 + GitHub Pages with `jekyll-theme-chirpy`
 
 ## Prerequisites
-+ Docker Desktop is [installed](https://hivsuper.github.io/posts/Windows-10安装Docker并使用私钥连接AWS-EC2/)
++ Docker Desktop is [installed](https://docs.docker.com/desktop/install/windows-install/)
 
 ## Create GitHub repository
 Refer to [Getting Started](https://chirpy.cotes.page/posts/getting-started/#option-1-using-the-chirpy-starter) to create [hivsuper.github.io](https://github.com/hivsuper/hivsuper.github.io) with the Chirpy Starter as template, then clone it to local.
