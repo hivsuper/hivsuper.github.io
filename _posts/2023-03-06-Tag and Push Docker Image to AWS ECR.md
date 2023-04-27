@@ -1,10 +1,10 @@
 ---
-title: Tag and Push Docker Image to AWS ECR  
+title: Tag and Push Docker Image to AWS ECR 
 date: 2023-03-06 15:29:00 +0800  
 categories: [English, AWS Learning Journey]  
 tags: [python, docker]  
 ---
-This article introduces how to push a local docker image to ECR in AWS.
+This article introduces how create ECR repository using terraform then to push a local docker image to ECR on AWS.
 
 ## References
 + [Copy a container image from one repository to another repository](https://docs.aws.amazon.com/eks/latest/userguide/copy-image-to-repository.html)
@@ -66,7 +66,7 @@ root@777777777777:/data/demos/aws-demo/terraform/scripts# aws ecr describe-repos
     "repositories": []
 }
 ```
-Deploy the terraform module to create ECR repository in AWS
+Deploy the terraform module to create ECR repository on AWS
 <details><summary markdown="span">Deploy 01-ecr console</summary>
 
 ```

@@ -1,10 +1,10 @@
 ---
-title: Deploy ECS with EC2 and AWS ECR  
+title: Deploy ECS with EC2 and AWS ECR Using Terraform  
 date: 2023-03-13 11:33:00 +0800  
 categories: [English, AWS Learning Journey]  
 tags: [python, docker]  
 ---
-This article introduces how to create ECS service running with EC2 and an ECR image in AWS.
+This article introduces how to create ECS service running with EC2 and an ECR image on AWS using terraform.
 
 ## Prerequisites
 + An image has been pushed to AWS ECR. See [Tag and Push Docker Image to AWS ECR](/posts/Tag-and-Push-Docker-Image-to-AWS-ECR/)
