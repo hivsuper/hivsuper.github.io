@@ -94,31 +94,24 @@ AWS Global Accelerator is a networking service that helps you improve the availa
 ## Elastic Load Balancing
 Below is the OSI model
 
-```mermaid
- graph BT;
-  7[Application Layer]
-  6[Presentation Layer]
-  5[Session Layer]
-  4[Transport Layer]
-  3[Network Layer]
-  2[Data Link Layer]
-  1[Physical Layer]
-  6 --> 7;
-  5 --> 6;
-  4 --> 5;
-  3 --> 4;
-  2 --> 3;
-  1 --> 2;
-```
+| Layer | Name |
+|-------| -------- |
+| 7     | Application Layer |
+| 6     | Presentation Layer |
+| 5     | Session Layer |
+| 4     | Transport Layer |
+| 3     | Network Layer |
+| 2     | Data Link Layer |
+| 1     | Physical Layer |
 
 ### Classic Load Balancers
-Operates at both layer 4 and 7. The only load balancer works with applications in the EC2-Classic network.
+Operates at both <u>layer 4 and 7</u>. The only load balancer works with applications in the EC2-Classic network.
 ### Application Load Balancers
-Operates at Layer 7 and supports HTTP/HTTPS, HTTP 1.1/HTTP 2, gRPC, WebSocket.
+Operates at <u>Layer 7</u> and supports HTTP/HTTPS, HTTP 1.1/HTTP 2, gRPC, WebSocket.
 ### Network Load Balancers
-Operates at Layer 4 and is TCP/UDP connection based.
+Operates at <u>Layer 4</u> and is TCP/UDP connection based.
 ### Gateway Load Balancers
-Operates at Layer 4 and is TCP/UDP connection based. It supports Zonal Isolation, Sticky sessions, Long Lived TCP connections.
+Operates at Layer 4 and is TCP/UDP connection based. It supports <u>Zonal Isolation</u>, Sticky sessions, Long Lived TCP connections.
 
 ## CloudFront
 ### CloudFront vs Global Accelerator
