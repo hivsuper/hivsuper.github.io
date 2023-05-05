@@ -91,35 +91,6 @@ Use to route traffic to multiple resources in proportions that you specify. You 
 ### AWS Global Accelerator vs Route53
 AWS Global Accelerator is a networking service that helps you improve the availability and performance of the applications that you offer to your global users. AWS Global Accelerator automatically checks the health of your applications and routes user traffic only to healthy application endpoints. <u>Route53 Need to set health check not like AWS Global Accelerator has built in natively.</u>
 
-## Elastic Load Balancing
-Below is the OSI model
-
-```mermaid
- graph BT;
-  7[Application Layer]
-  6[Presentation Layer]
-  5[Session Layer]
-  4[Transport Layer]
-  3[Network Layer]
-  2[Data Link Layer]
-  1[Physical Layer]
-  6 --> 7;
-  5 --> 6;
-  4 --> 5;
-  3 --> 4;
-  2 --> 3;
-  1 --> 2;
-```
-
-### Classic Load Balancers
-Operates at both layer 4 and 7. The only load balancer works with applications in the EC2-Classic network.
-### Application Load Balancers
-Operates at Layer 7 and supports HTTP/HTTPS, HTTP 1.1/HTTP 2, gRPC, WebSocket.
-### Network Load Balancers
-Operates at Layer 4 and is TCP/UDP connection based.
-### Gateway Load Balancers
-Operates at Layer 4 and is TCP/UDP connection based. It supports Zonal Isolation, Sticky sessions, Long Lived TCP connections.
-
 ## CloudFront
 ### CloudFront vs Global Accelerator
 Global Accelerator works like CloudFront with Latency-based routing. While <u>CloudFront can achieve some of the same objectives as Global Accelerator, it is limited to HTTP traffic</u>, CloudFront can cache HTTP objects at edge locations and it uses a DNS name with changing IP addresses rather than static ones. Gloabal Accelerator can be used for all TCP and UDP traffic, and Global Accelerator does not support Edge Caching. 
