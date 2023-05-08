@@ -94,16 +94,16 @@ protected-mode no
 或者使用`docker run -v {CONFIG PATH}:/usr/local/etc/redis --name test-redis -p 6379:6379 -d redis:6.2.4 redis-server /usr/local/etc/redis/redis.conf`在后台启动redis server
 
 ### 6. 使用redis-cli连接redis server
-执行`docker ps`找到正在运行的redis container
+执行`docker ps`找到正在运行的redis container  
 <img src="/assets/img/202106/571584-20210613001507647-1827989846.png" width="800" />
-运行`docker exec -it {CONTAINER ID} redis-cli -a {PASSWORD}`
+运行`docker exec -it {CONTAINER ID} redis-cli -a {PASSWORD}`  
 <img src="/assets/img/202106/571584-20210613001714129-2064783819.png" width="800" />
-若不打开持久化模式，每次redis关闭时数据将丢失，加上`--appendonly yes`即可开启持久化，同时`-v {DATA PATH}:/data`可把数据挂载到指定的volume
-`docker run -v {CONFIG PATH}:/usr/local/etc/redis -v {DATA PATH}:/data --name test-redis -p 6379:6379 -d redis:6.2.4 redis-server /usr/local/etc/redis/redis.conf --appendonly yes`
+若不打开持久化模式，每次redis关闭时数据将丢失，加上`--appendonly yes`即可开启持久化，同时`-v {DATA PATH}:/data`可把数据挂载到指定的volume  
+`docker run -v {CONFIG PATH}:/usr/local/etc/redis -v {DATA PATH}:/data --name test-redis -p 6379:6379 -d redis:6.2.4 redis-server /usr/local/etc/redis/redis.conf --appendonly yes`  
 <img src="/assets/img/202106/571584-20210613114552128-766378054.png" width="800" />
 
 ### 7. 关闭redis server
-执行`docker ps`找到正在运行的redis container，然后运行`docker kill {CONTAINER ID}`
+执行`docker ps`找到正在运行的redis container，然后运行`docker kill {CONTAINER ID}`  
 <img src="/assets/img/202106/571584-20210613010915385-94375020.png" width="800" />
 
 ### 8. 重启redis server
