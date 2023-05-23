@@ -36,7 +36,7 @@ dictConfig({
         'level': 'INFO',
         'handlers': ['console']
     },
-    # Disable any existing non-root loggers to prevent unexpected impact
+    # Disable any existing non-root loggers to prevent any unexpected impact
     'disable_existing_loggers': False
 })
 
