@@ -1,7 +1,7 @@
 ---
 title: Windows 10安装Docker并使用私钥连接AWS EC2  
 date: 2020-08-21 22:41:00 +0800  
-categories: [Chinese, CNBlogs]  
+categories: [CNBlogs]  
 tags: [docker]  
 ---
 <a href="https://www.cnblogs.com/hiver/p/13543739.html" target="_blank">点击查看原文</a>  

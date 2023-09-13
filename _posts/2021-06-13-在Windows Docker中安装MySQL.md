@@ -1,7 +1,7 @@
 ---
 title: 在Windows Docker中安装MySQL  
 date: 2021-06-13 03:17:00 +0800  
-categories: [Chinese, CNBlogs]   
+categories: [CNBlogs]   
 tags: [mysql, docker]  
 ---
 <a href="https://www.cnblogs.com/hiver/p/14879516.html" target="_blank">点击查看原文</a>  

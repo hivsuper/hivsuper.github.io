@@ -1,7 +1,7 @@
 ---
 title: Development & Architect Quick Notes
 date: 2023-05-15 11:28:00 +0800  
-categories: [English, Uncategorized]  
+categories: [Uncategorized]  
 ---
 Previously I usually make notes in my diary or online note software, thus information is decentralized. I decide to create this page to place stuffs together here in future.  
 

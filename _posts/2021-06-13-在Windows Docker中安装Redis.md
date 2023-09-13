@@ -1,7 +1,7 @@
 ---
 title: 在Windows Docker中安装Redis   
 date: 2021-06-13 00:18:00 +0800  
-categories: [Chinese, CNBlogs]   
+categories: [CNBlogs]   
 tags: [redis, docker]  
 ---
 <a href="https://www.cnblogs.com/hiver/p/14879401.html" target="_blank">点击查看原文</a>  

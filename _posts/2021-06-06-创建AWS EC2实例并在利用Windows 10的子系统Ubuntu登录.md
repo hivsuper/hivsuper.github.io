@@ -1,7 +1,7 @@
 ---
 title: 创建AWS EC2实例并在利用Windows 10的子系统Ubuntu登录  
 date: 2021-06-06 22:25:00 +0800  
-categories: [Chinese, CNBlogs]   
+categories: [CNBlogs]   
 tags: [linux, cloud]  
 ---
 <a href="https://www.cnblogs.com/hiver/p/14856667.html" target="_blank">点击查看原文</a>  

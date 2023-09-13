@@ -1,7 +1,7 @@
 ---
 title: Create a Web Application Using Flask in Python 3  
 date: 2023-03-03 21:23:00 +0800  
-categories: [English, Python Learning Journey]  
+categories: [Technology, Python Learning Journey]  
 tags: [python, docker]  
 ---
 ## Overview
