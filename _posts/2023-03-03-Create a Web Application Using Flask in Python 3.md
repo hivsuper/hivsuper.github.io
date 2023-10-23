@@ -6,7 +6,7 @@ tags: [python, docker]
 ---
 ## Overview
 This article is based on [awesome-compose](https://github.com/docker/awesome-compose/tree/master/flask) by adding some S3 actions to code.
-<details><summary markdown="span">[app.py](https://github.com/hivsuper/demos/blob/master/aws-demo/flask/app/app.py)</summary>
+<details><summary markdown="span">[app.py](https://github.com/hivsuper/learning-journey/tree/master/demos/blob/master/aws-demo/flask/app/app.py)</summary>
 
 ```
 from http import HTTPStatus

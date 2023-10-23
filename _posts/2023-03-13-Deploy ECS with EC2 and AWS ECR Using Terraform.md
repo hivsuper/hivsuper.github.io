@@ -10,7 +10,7 @@ This article introduces how to create ECS service running with EC2 and an ECR im
 + An image has been pushed to AWS ECR. See [Tag and Push Docker Image to AWS ECR](/posts/Tag-and-Push-Docker-Image-to-AWS-ECR/)
 
 ## Create terraform code and run
-See terrafrom code from [02-ecs](https://github.com/hivsuper/demos/tree/master/aws-demo/terraform/app/02-ecs). 
+See terrafrom code from [02-ecs](https://github.com/hivsuper/learning-journey/tree/master/demos/tree/master/aws-demo/terraform/app/02-ecs). 
 <details><summary markdown="span">Deploy 02-ecs console</summary>
 
 ```
