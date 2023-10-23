@@ -32,7 +32,7 @@ flask-web                                                 latest                
 ```
 
 ## Create terraform code and run
-See terrafrom code from [01-ecr](https://github.com/hivsuper/learning-journey/tree/master/demos/tree/master/aws-demo/terraform/app/01-ecr). 
+See terrafrom code from [01-ecr](https://github.com/hivsuper/learning-journey/tree/master/demos/aws-demo/terraform/app/01-ecr). 
 
 ```
 resource "aws_ecr_repository" "flask" {
