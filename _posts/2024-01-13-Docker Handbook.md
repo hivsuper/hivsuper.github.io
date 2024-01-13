@@ -5,7 +5,7 @@ categories: [Uncategorized]
 tags: [docker]  
 ---
 Refer to the earlier [article](/posts/Windows-10安装Docker并使用私钥连接AWS-EC2/) to create docker in `Windows OS`.  
-### How to Create User And Add to the New User Group?
+### How to Create User and Add to the New User Group?
 `useradd -s /bin/bash -m {USER}` to create user
 ```
 root@fcec697d2b29:/# useradd -s /bin/bash -m github
