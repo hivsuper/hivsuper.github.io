@@ -29,3 +29,26 @@ An I/O multiplexing module monitors multiple sockets simultaneously and only ret
 Therefore, Redis 6 introduces threaded I/O. Nevertheless, there are still limitations because the author prefers redis cluster than Multiple-Threaded
 - Multiple-Threaded is only used for I/O whereas EventLoop is still Single-Threaded
 - I/O thread can only READ or Write and event thread keeps waiting until all I/O threads get done
+
+
+## [3 Cache Problems and Mitigation Approaches](https://www.pixelstech.net/article/1586522853-What-is-cache-penetration-cache-breakdown-and-cache-avalanche)
+
+### Cache penetration
+Cache penetration is a scenario where the data to be searched doesn't exist at DB and the returned empty result is not cached as well and hence every search for the key will hit the DB eventually.
+The mitigation plans:
+1. If there is no data for the key in DB, just return an empty result and cache it for a short period of time.
+1. Using Bloom filter or add a verification layer similar. Bloom filter is similar to hbase set which can be used to check whether a key exists in the data set. If the key exists, go to the cache layer or DB layer, if it doesn't exists in the data set, then just return.
+If the searched key has high repeat rate, then can adopt the first solution. Otherwise if the searched key has low repeat rate and the searched keys are too many, can adopt the second solution to filter most of them first.
+
+### Cache breakdown
+Cache breakdown is a scenario where the cached data expires and at the same time there are lots of search on the expired data which suddenly cause the searches to hit DB directly and increase the load to the DB layer dramatically.
+The mitigation plans:
+1. Place a mutex lock in concurrency environment. When some threads are searching the key and updating the cache, any other request should wait until the lock gets released.
+1. Asynchronously update the cached data through a worker thread so that the hot data will never expire.
+
+### Cache avalanche
+Cache avalanche is a scenario where lots of cached data expire at the same time or the cache service is down and all of a sudden all searches of these data will hit DB and cause high load to the DB layer and impact the performance.
+The mitigation plans:
+1. If Redis is used, use redis clusters to ensure that some cache server instance is in service at any point of time.
+1. Adjust the expiration time for different keys so that they will not expire at the same time.
+1. Never expire hot data.
