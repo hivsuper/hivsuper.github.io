@@ -25,3 +25,34 @@ github@fcec697d2b29:/$ pwd
 /
 github@fcec697d2b29:/$
 ```
+
+### Fix "Ports are not available" Error
+If the port is unavailable when starting a docker container
+```
+PS C:\Users\Super Li> docker start test-mysql
+Error response from daemon: Ports are not available: exposing port TCP 0.0.0.0:3306 -> 0.0.0.0:0: listen tcp 0.0.0.0:3306: bind: An attempt was made to access a socket in a way forbidden by its access permissions.
+Error: failed to start containers: test-mysql
+PS C:\Users\Super Li> netstat -aon | findstr :
+```
+Run `netstat -aon` to find if the port is occupied.
+```
+PS C:\Users\Super Li> netstat -aon | findstr 3306
+  TCP    0.0.0.0:3306           0.0.0.0:0              LISTENING       20940
+  TCP    127.0.0.1:3306         127.0.0.1:14007        ESTABLISHED     20940
+  TCP    127.0.0.1:14007        127.0.0.1:3306         ESTABLISHED     28732
+  TCP    [::]:3306              [::]:0                 LISTENING       20940
+  TCP    [::1]:3306             [::]:0                 LISTENING       23288
+```
+1. If the port is occupied by any process then kill it then retry.
+1. If the port isn't occupied, restart `winnat` as administrator then retry.
+```
+PS C:\Windows\system32> net stop winnat
+
+Windows NAT Driver 服务已成功停止。
+
+PS C:\Windows\system32> net start winnat
+
+Windows NAT Driver 服务已经启动成功。
+
+PS C:\Windows\system32>
+```
