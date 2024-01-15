@@ -34,7 +34,7 @@ Error response from daemon: Ports are not available: exposing port TCP 0.0.0.0:3
 Error: failed to start containers: test-mysql
 PS C:\Users\Super Li> netstat -aon | findstr :
 ```
-Run `netstat -aon` to find if the port is occupied.
+Run `netstat -aon` to see if the port is occupied.
 ```
 PS C:\Users\Super Li> netstat -aon | findstr 3306
   TCP    0.0.0.0:3306           0.0.0.0:0              LISTENING       20940
@@ -43,8 +43,8 @@ PS C:\Users\Super Li> netstat -aon | findstr 3306
   TCP    [::]:3306              [::]:0                 LISTENING       20940
   TCP    [::1]:3306             [::]:0                 LISTENING       23288
 ```
-1. If the port is occupied by any process, kill it and retry.
-1. If the port isn't occupied, restart `winnat` as administrator and retry.
+1. If so, kill the process and retry.
+1. If not, restart `winnat` as administrator and retry.
 
 ```
 PS C:\Windows\system32> net stop winnat
