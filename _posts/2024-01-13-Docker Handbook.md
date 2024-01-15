@@ -43,8 +43,9 @@ PS C:\Users\Super Li> netstat -aon | findstr 3306
   TCP    [::]:3306              [::]:0                 LISTENING       20940
   TCP    [::1]:3306             [::]:0                 LISTENING       23288
 ```
-1. If the port is occupied by any process then kill it then retry.
-1. If the port isn't occupied, restart `winnat` as administrator then retry.
+1. If the port is occupied by any process, kill it and retry.
+1. If the port isn't occupied, restart `winnat` as administrator and retry.
+
 ```
 PS C:\Windows\system32> net stop winnat
 
