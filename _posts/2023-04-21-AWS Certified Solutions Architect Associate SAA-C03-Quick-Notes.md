@@ -54,7 +54,7 @@ Elastic Fabric Adapter (EFA) is a network interface for Amazon EC2 instances tha
 ### EFS
 Amazon Elastic File System (Amazon EFS) provides a simple, serverless, set-and-forget elastic file system for use with Amazon Web Services Cloud services and on-premises resources. <u>Using Amazon EFS with Microsoft Windows–based Amazon EC2 instances is not supported.</u>
 #### EFS storage classes
-Amazon EFS offers a range of storage classes that are designed for different use cases. These include EFS Standard, EFS Standard–Infrequent Access (Standard-IA), EFS One Zone, and EFS One Zone–Infrequent Access (EFS One Zone-IA). The following sections provide details of these storage classes.
+Amazon EFS offers a range of storage classes that are designed for different use cases. These include EFS Standard, EFS Standard–Infrequent Access (Standard-IA), EFS One Zone, and EFS One Zone–Infrequent Access (EFS One Zone-IA). 
 
 ### RAID configuration on Linux
 A RAID array uses multiple EBS volumes to improve performance or redundancy. Creating a RAID 0 array allows you to achieve a higher level of performance for a file system than you can provision on a single Amazon EBS volume. Use RAID 0 when I/O performance is of the utmost importance. With RAID 0, I/O is distributed across the volumes in a stripe. <u>When fault tolerance is more important than I/O performance a RAID 1 array should be used which creates a mirror of your data for extra redundancy.</u>
