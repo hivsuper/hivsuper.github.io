@@ -51,7 +51,7 @@ Amazon Elastic File System (Amazon EFS) provides a simple, serverless, set-and-f
 #### EFS storage classes
 Amazon EFS offers a range of storage classes that are designed for different use cases. These include EFS Standard, EFS Standard–Infrequent Access (Standard-IA), EFS One Zone, and EFS One Zone–Infrequent Access (EFS One Zone-IA). 
 
-#### Amazon EBS Multi-attach vs Amazon EFS  
+#### [Amazon EBS Multi-attach vs Amazon EFS](https://repost.aws/questions/QUK2RANw1QTKCwpDUwCCI72A/efs-vs-ebs-mult-attach)
 EFS is a fully-managed file system service. It's fully elastic, growing and shrinking as you add and remove files, so you don't need to worry about manually managing capacity, either to accommodate growth, or to optimize utilization - you pay only for the storage that you use. EBS multi-attach volume's don't support re-sizing capacity once they are created.  
 EFS is also designed for high availability and high durability. To achieve these levels of availability and durability, EFS automatically replicates data within and across 3 Availability Zones, with no single points of failure. EBS multi-attach volumes can be used for clients within a single Availability Zone. If there is a volume failure at the EBS infrastructure layer, all clients will be impacted.  
 EFS also has a number of 'bells and whistles' in terms of features and integrations with other services - things like automatic cost optimization with EFS Infrequent Access and Lifecycle Management, IAM authn/authz and Access Points, integration with AWS Backup, and integrations with services like ECS and SageMaker.
