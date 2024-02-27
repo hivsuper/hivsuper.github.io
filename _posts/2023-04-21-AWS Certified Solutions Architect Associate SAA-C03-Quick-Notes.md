@@ -32,11 +32,6 @@ HDD-backed volumes are optimized for large streaming workloads where the dominan
 - Previous generation volumes
 Magnetic (standard) volumes are <u>previous generation volumes</u> that are backed by magentic drives. They are suited for workloads with small datasets where data is accessed infrequently and performance is not of primary importance. These volumes deliver approximately 100 IOPS on average, with burst capability of up to hundreds of IOPS, and they can range in size from 1 GiB to 1 TiB.
 
-- Amazon EBS Multi-attach vs Amazon EFS  
-EFS is a fully-managed file system service. It's fully elastic, growing and shrinking as you add and remove files, so you don't need to worry about manually managing capacity, either to accommodate growth, or to optimize utilization - you pay only for the storage that you use. EBS multi-attach volume's don't support re-sizing capacity once they are created.  
-EFS is also designed for high availability and high durability. To achieve these levels of availability and durability, EFS automatically replicates data within and across 3 Availability Zones, with no single points of failure. EBS multi-attach volumes can be used for clients within a single Availability Zone. If there is a volume failure at the EBS infrastructure layer, all clients will be impacted.  
-EFS also has a number of 'bells and whistles' in terms of features and integrations with other services - things like automatic cost optimization with EFS Infrequent Access and Lifecycle Management, IAM authn/authz and Access Points, integration with AWS Backup, and integrations with services like ECS and SageMaker.
-
 ### [Placement groups](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/placement-groups.html)
 1. Cluster  
 <u>packs instances close together inside an Availability Zone</u>. This strategy enables workloads to achieve the low-latency network performance necessary for tightly-coupled node-to-node communication that is typical of high-performance computing (HPC) applications.
@@ -55,6 +50,11 @@ Elastic Fabric Adapter (EFA) is a network interface for Amazon EC2 instances tha
 Amazon Elastic File System (Amazon EFS) provides a simple, serverless, set-and-forget elastic file system for use with Amazon Web Services Cloud services and on-premises resources. <u>Using Amazon EFS with Microsoft Windows–based Amazon EC2 instances is not supported.</u>
 #### EFS storage classes
 Amazon EFS offers a range of storage classes that are designed for different use cases. These include EFS Standard, EFS Standard–Infrequent Access (Standard-IA), EFS One Zone, and EFS One Zone–Infrequent Access (EFS One Zone-IA). 
+
+#### Amazon EBS Multi-attach vs Amazon EFS  
+EFS is a fully-managed file system service. It's fully elastic, growing and shrinking as you add and remove files, so you don't need to worry about manually managing capacity, either to accommodate growth, or to optimize utilization - you pay only for the storage that you use. EBS multi-attach volume's don't support re-sizing capacity once they are created.  
+EFS is also designed for high availability and high durability. To achieve these levels of availability and durability, EFS automatically replicates data within and across 3 Availability Zones, with no single points of failure. EBS multi-attach volumes can be used for clients within a single Availability Zone. If there is a volume failure at the EBS infrastructure layer, all clients will be impacted.  
+EFS also has a number of 'bells and whistles' in terms of features and integrations with other services - things like automatic cost optimization with EFS Infrequent Access and Lifecycle Management, IAM authn/authz and Access Points, integration with AWS Backup, and integrations with services like ECS and SageMaker.
 
 ### RAID configuration on Linux
 A RAID array uses multiple EBS volumes to improve performance or redundancy. Creating a RAID 0 array allows you to achieve a higher level of performance for a file system than you can provision on a single Amazon EBS volume. Use RAID 0 when I/O performance is of the utmost importance. With RAID 0, I/O is distributed across the volumes in a stripe. <u>When fault tolerance is more important than I/O performance a RAID 1 array should be used which creates a mirror of your data for extra redundancy.</u>
