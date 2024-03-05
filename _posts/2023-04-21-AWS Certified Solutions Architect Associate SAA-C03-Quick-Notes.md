@@ -147,6 +147,9 @@ If you need space for additional data, you can scale up the storage of an existi
 - Managing capacity automatically with Amazon RDS storage autoscaling
 If your workload is <u>unpredictable</u>, you can enable storage autoscaling for an Amazon RDS DB instance. To do so, you can use the Amazon RDS console, the Amazon RDS API, or the AWS CLI.
 
+### Amazon RDS Proxy
+Lambda -> RDS Proxy to reduce the connection to RDS directly
+
 ## AWS Data Exchange 
 AWS Data Exchange is on a mission to increase speed to value for third-party data sets in the cloud.
 
