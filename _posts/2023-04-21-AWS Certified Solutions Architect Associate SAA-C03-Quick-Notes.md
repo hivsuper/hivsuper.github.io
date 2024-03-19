@@ -66,9 +66,9 @@ Teams choose Kubernetes for its vibrant ecosystem and community, consistent open
 <u>Amazon EKS provides the flexibility of Kubernetes with the security and resiliency of being an AWS managed service that is optimized for customers building highly available services</u>. Amazon EKS provides a secure, reliable, scalable, and resilient Kubernetes environment for customers such as Intel, Snap, Intuit, GoDaddy, and Fidelity, and helps Amazon.com deliver an incredible customer experience. Customers adopting Kubernetes that want the resiliency of AWS should start with Amazon EKS.
 
 ## Elastic Beanstalk vs Cloudformation
-- Elastic Beanstalk
+- Elastic Beanstalk  
 With AWS Elastic Beanstalk, you can quickly deploy and manage applications in the AWS Cloud <u>without worrying about the infrastructure</u> that runs those applications. AWS Elastic Beanstalk reduces management complexity without restricting choice or control. You simply upload your application, and AWS Elastic Beanstalk automatically handles the details of capacity provisioning, load balancing, scaling, and application health monitoring.
-- Cloudformation
+- Cloudformation  
 AWS CloudFormation enables you to <u>create and provision AWS infrastructure deployments predictably and repeatedly</u>. It helps you leverage AWS products such as Amazon EC2, Amazon Elastic Block Store, Amazon SNS, Elastic Load Balancing, and Auto Scaling to build highly reliable, highly scalable, cost-effective applications in the cloud without worrying about creating and configuring the underlying AWS infrastructure. AWS CloudFormation enables you to use a template file to create and delete a collection of resources together as a single unit (a stack).
 
 ### AWS SAM
