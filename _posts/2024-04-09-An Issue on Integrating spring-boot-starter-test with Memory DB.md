@@ -60,13 +60,13 @@ The files below should be created properly.
 ```
 </details>
 
-<details open><summary markdown="span">com.demo.ledger.account.controller.AccountController.java</summary>
+<details open><summary markdown="span">com.demo.account.controller.AccountController.java</summary>
 
 ```java
-package com.demo.ledger.account.controller;
+package com.demo.account.controller;
 
-import com.demo.ledger.account.pojo.Account;
-import com.demo.ledger.account.service.IAccountQueryService;
+import com.demo.account.pojo.Account;
+import com.demo.account.service.IAccountQueryService;
 import jakarta.annotation.Resource;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -89,12 +89,12 @@ public class AccountController {
 ```
 </details>
 
-<details open><summary markdown="span">com.demo.ledger.account.service.IAccountQueryService.java</summary>
+<details open><summary markdown="span">com.demo.account.service.IAccountQueryService.java</summary>
 
 ```java
-package com.demo.ledger.account.service;
+package com.demo.account.service;
 
-import com.demo.ledger.account.pojo.Account;
+import com.demo.account.pojo.Account;
 
 import java.util.List;
 
@@ -104,14 +104,14 @@ public interface IAccountQueryService {
 ```
 </details>
 
-<details open><summary markdown="span">com.demo.ledger.account.service.impl.AccountQueryService.java</summary>
+<details open><summary markdown="span">com.demo.account.service.impl.AccountQueryService.java</summary>
 
 ```java
-package com.demo.ledger.account.service.impl;
+package com.demo.account.service.impl;
 
-import com.demo.ledger.account.mapper.AccountMapper;
-import com.demo.ledger.account.pojo.Account;
-import com.demo.ledger.account.service.IAccountQueryService;
+import com.demo.account.mapper.AccountMapper;
+import com.demo.account.pojo.Account;
+import com.demo.account.service.IAccountQueryService;
 import jakarta.annotation.Resource;
 import org.springframework.stereotype.Service;
 
@@ -131,10 +131,10 @@ public class AccountQueryService implements IAccountQueryService {
 ```
 </details>
 
-<details open><summary markdown="span">com.demo.ledger.account.pojo.Account.java</summary>
+<details open><summary markdown="span">com.demo.account.pojo.Account.java</summary>
 
 ```java
-package com.demo.ledger.account.pojo;
+package com.demo.account.pojo;
 
 import java.util.Date;
 
@@ -153,13 +153,13 @@ public class Account {
 ```
 </details>
 
-<details open><summary markdown="span">com.demo.ledger.account.mapper.AccountMapper.java</summary>
+<details open><summary markdown="span">com.demo.account.mapper.AccountMapper.java</summary>
 
 ```java
-package com.demo.ledger.account.mapper;
+package com.demo.account.mapper;
 
 
-import com.demo.ledger.account.pojo.Account;
+import com.demo.account.pojo.Account;
 import org.apache.ibatis.annotations.Result;
 import org.apache.ibatis.annotations.Results;
 import org.apache.ibatis.annotations.Select;
@@ -219,10 +219,10 @@ CREATE TABLE `account` (
 ```
 </details>
 
-<details open><summary markdown="span">com.demo.ledger.account.config.MemoryDBTest.java</summary>
+<details open><summary markdown="span">com.demo.account.config.MemoryDBTest.java</summary>
 
 ```java
-package com.demo.ledger.account.config;
+package com.demo.account.config;
 
 import org.springframework.test.context.ActiveProfiles;
 import org.springframework.test.context.jdbc.Sql;
@@ -246,12 +246,12 @@ public @interface MemoryDBTest {
 }
 ```
 </details>
-<details open><summary markdown="span">com.demo.ledger.account.controller.AccountControllerTest.java</summary>
+<details open><summary markdown="span">com.demo.account.controller.AccountControllerTest.java</summary>
 
 ```java
-package com.demo.ledger.account.controller;
+package com.demo.account.controller;
 
-import com.demo.ledger.account.config.MemoryDBTest;
+import com.demo.account.config.MemoryDBTest;
 import jakarta.annotation.Resource;
 import org.hamcrest.Matchers;
 import org.junit.jupiter.api.Test;
@@ -290,7 +290,7 @@ public class AccountControllerTest {
 </details>
 
 ## Reproduce the Exception
-The exception can be reproduced by removing the `@SqlMergeMode(MERGE)` from `com.demo.ledger.account.config.MemoryDBTest.java`.
+The exception can be reproduced by removing the `@SqlMergeMode(MERGE)` from `com.demo.account.config.MemoryDBTest.java`.
 
 ## Root Cause
 Only the latter one will be invoked When there are `@Sql` annotations at class and method level, which has resulted the exception showed at the beginning of the article. 
