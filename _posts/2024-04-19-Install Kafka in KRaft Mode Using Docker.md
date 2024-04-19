@@ -4,6 +4,7 @@ date: 2024-04-19 18:14:00 +0800
 categories: [Technology, Kafka Learning Journey]  
 tags: [kafka]  
 ---
+Apache Kafka® Raft (KRaft) is the consensus protocol that was introduced to remove Kafka’s dependency on ZooKeeper for metadata management. This greatly simplifies Kafka’s architecture by consolidating responsibility for metadata into Kafka itself.   
 This tutorial demonstrates the process of installing kafka in KRaft mode and simple tests.
 ## Prerequisites
 - Java 11+
@@ -46,7 +47,7 @@ confluentinc/cp-kafka:7.6.1
 
 ## Kafka Verification
 ### In Kafka CLI
-1. Creating the Kafka topic `test-topic` with 3 partitions and a replication factor of 1
+1. Create the Kafka topic `test-topic` with 3 partitions and a replication factor of 1
 ```shell
 sh kafka-topics.sh --bootstrap-server localhost:9092 --topic test-topic --create --partitions 3 --replication-factor 1
 ```
@@ -73,6 +74,7 @@ Download [Offset Explorer](https://kafkatool.com/download.html) then install it.
 1. Configure the kafka server  
 ![](/assets/img/202404/Offset-Explorer-Add-Cluster.png)
 2. Send message  
+The key/value can be converted in [string-hex](https://string-functions.com/string-hex.aspx).  
 ![](/assets/img/202404/Offset-Explorer-Send-Message.png)
 
 ## References
