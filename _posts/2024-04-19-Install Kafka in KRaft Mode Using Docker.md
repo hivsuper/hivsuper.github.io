@@ -72,10 +72,10 @@ Processed a total of 2 messages
 ### In Offset Explorer(Formerly Kafka Tool)
 Download [Offset Explorer](https://kafkatool.com/download.html) then install it.
 1. Configure the kafka server  
-![](/assets/img/202404/Offset-Explorer-Add-Cluster.png)
+<img src="/assets/img/202404/Offset-Explorer-Add-Cluster.png" width = "800" />
 2. Send message  
 The key/value can be converted in [string-hex](https://string-functions.com/string-hex.aspx).  
-![](/assets/img/202404/Offset-Explorer-Send-Message.png)
+<img src="/assets/img/202404/Offset-Explorer-Send-Message.png" width = "800" />
 
 ## References
 - [Install Confluent Platform using Docker](https://docs.confluent.io/platform/current/installation/docker/config-reference.html)
