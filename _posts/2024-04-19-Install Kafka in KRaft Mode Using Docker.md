@@ -8,7 +8,7 @@ Apache Kafka® Raft (KRaft) is the consensus protocol that was introduced to rem
 This tutorial demonstrates the process of installing kafka in KRaft mode and simple tests.
 ## Prerequisites
 - Java 11+
-- Docker environment is ready. See [Windows 10安装Docker并使用私钥连接AWS EC2](https://hivsuper.github.io/posts/Windows-10安装Docker并使用私钥连接AWS-EC2/)
+- Docker environment is ready. See [Windows 10安装Docker并使用私钥连接AWS EC2](/posts/Windows-10安装Docker并使用私钥连接AWS-EC2/)
 
 ## Kafka Installation
 Before starting this process, one has to download the necessary [scripts](https://www.apache.org/dyn/closer.cgi?path=/kafka/3.7.0/kafka_2.13-3.7.0.tgz) and extract it.
@@ -58,7 +58,7 @@ msg1
 msg2
 ```
 - Send messages when pressing `Enter`
-- `Ctrl + [2023-01-05-使用jacoco-maven-plugin生成Java项目代码覆盖率报告.md](2023-01-05-%CA%B9%D3%C3jacoco-maven-plugin%C9%FA%B3%C9Java%CF%EE%C4%BF%B4%FA%C2%EB%B8%B2%B8%C7%C2%CA%B1%A8%B8%E6.md)C` is used to exit the producer
+- `Ctrl + C` is used to exit the producer
 
 3. Create a consumer to digest messages
 ```

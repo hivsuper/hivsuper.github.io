@@ -5,7 +5,7 @@ categories: [CNBlogs]
 tags: [mysql, docker]  
 ---
 <a href="https://www.cnblogs.com/hiver/p/14879516.html" target="_blank">点击查看原文</a>  
-本文的前提是本地Docker环境已经配置成功，参考[Windows 10安装Docker并使用私钥连接AWS EC2](https://hivsuper.github.io/posts/Windows-10安装Docker并使用私钥连接AWS-EC2/)
+本文的前提是本地Docker环境已经配置成功，参考[Windows 10安装Docker并使用私钥连接AWS EC2](/posts/Windows-10安装Docker并使用私钥连接AWS-EC2/)
 ### 1. 参考资料
 - [GRANT Statement](https://dev.mysql.com/doc/refman/8.0/en/grant.html)
 - [How to fix "Host '172.18.0.1' is not allowed to connect" with MySQL Docker](https://www.jeffgeerling.com/blog/2017/how-fix-host-1721801-not-allowed-connect-mysql-docker)
