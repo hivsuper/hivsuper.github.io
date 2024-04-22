@@ -1,5 +1,5 @@
 ---
-title: An Issue on Integrating spring-boot-starter-test with Memory DB  
+title: Table Not Found Exception When Integrating spring-boot-starter-test with Memory DB  
 date: 2024-04-09 20:00:00 +0800  
 categories: [Technology, Java Learning Journey]  
 tags: [docker]  
@@ -293,4 +293,4 @@ public class AccountControllerTest {
 The exception can be reproduced by removing the `@SqlMergeMode(MERGE)` from `com.demo.account.config.MemoryDBTest.java`.
 
 ## Root Cause
-Only the latter one will be invoked When there are `@Sql` annotations at class and method level, which has resulted the exception showed at the beginning of the article. 
+If SqlMergeMode isn't `MERGE`, only the latter one will be invoked When there are `@Sql` annotations at class and method level, which has resulted the exception showed at the beginning of the article. 
