@@ -293,4 +293,4 @@ public class AccountControllerTest {
 The exception can be reproduced by removing the `@SqlMergeMode(MERGE)` from `com.demo.account.config.MemoryDBTest.java`.
 
 ## Root Cause
-If SqlMergeMode isn't `MERGE`, only the latter one will be invoked When there are `@Sql` annotations at class and method level, which has resulted the exception showed at the beginning of the article. 
+When the table schema script & data script are in separated files but SqlMergeMode isn't `MERGE`, only the latter one will be invoked no matter the `@Sql` annotations is at class and method level, which has resulted the exception showed at the beginning of the article. 
