@@ -2,7 +2,7 @@
 title: Table Not Found Exception When Integrating spring-boot-starter-test with Memory DB  
 date: 2024-04-09 20:00:00 +0800  
 categories: [Technology, Java Learning Journey]  
-tags: [docker]  
+tags: [maven, java]  
 ---
 I encountered the following exception when integrating spring-boot-start-test with memory db.
 ```shell
