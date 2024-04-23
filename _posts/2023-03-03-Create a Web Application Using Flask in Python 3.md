@@ -5,7 +5,7 @@ categories: [Technology, Python Learning Journey]
 tags: [python, docker]  
 ---
 ## Overview
-This article is based on [awesome-compose](https://github.com/docker/awesome-compose/tree/master/flask) by adding some S3 actions to code.
+This article is based on [awesome-compose](https://github.com/docker/awesome-compose/tree/master/flask) by adding some S3 operations to code.
 <details><summary markdown="span">[app.py](https://github.com/hivsuper/learning-journey/tree/master/demos/aws-demo/flask/app/app.py)</summary>
 
 ```
