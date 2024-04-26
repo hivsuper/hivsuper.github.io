@@ -1,8 +1,8 @@
 ---
 title: Create Producer and Consumer Using spring-kafka  
 date: 2024-04-21 17:26:00 +0800  
-categories: [Technology, Kafka Learning Journey]  
-tags: [java,kafka]  
+categories: [Technology, A Simple Application Using spring-kafka]  
+tags: [java, kafka]  
 ---
 The Spring for Apache Kafka (spring-kafka) project applies core Spring concepts to the development of Kafka-based messaging solutions. It provides a "template" as a high-level abstraction for sending messages. It also provides support for Message-driven POJOs with @KafkaListener annotations and a "listener container". These libraries promote the use of dependency injection and declarative.  
 This article will demonstrate creating kafka producer/consumer and respective unit test using an embedded instance of Kafka. All the codes of the article can be downloaded from [here](https://github.com/hivsuper/learning-journey/tree/master/demos/kafka-demo).

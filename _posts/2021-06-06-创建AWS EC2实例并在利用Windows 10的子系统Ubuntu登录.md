@@ -2,7 +2,7 @@
 title: 创建AWS EC2实例并在利用Windows 10的子系统Ubuntu登录  
 date: 2021-06-06 22:25:00 +0800  
 categories: [CNBlogs]   
-tags: [linux, cloud]  
+tags: [linux, aws]  
 ---
 <a href="https://www.cnblogs.com/hiver/p/14856667.html" target="_blank">点击查看原文</a>  
 由于Windows 10升级后无法与VirtualBox兼容，而docker的配置又太过麻烦，今天终于下决心注册一个AWS的帐号。本文介绍：

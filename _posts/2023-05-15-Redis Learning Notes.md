@@ -1,7 +1,7 @@
 ---
 title: Redis Learning Notes  
 date: 2023-05-15 11:28:00 +0800  
-categories: [Technology, Redis Learning Journey]  
+categories: [Technology]  
 tags: [redis]  
 ---
 This is Series II of [Redis学习记录](https://www.cnblogs.com/hiver/p/7403979.html).  

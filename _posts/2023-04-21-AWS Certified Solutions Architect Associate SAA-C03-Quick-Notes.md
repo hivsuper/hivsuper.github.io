@@ -1,8 +1,8 @@
 ---
 title: AWS Certified Solutions Architect Associate SAA-C03 Quick Notes 
 date: 2023-04-21 14:02:00 +0800  
-categories: [Technology, AWS Learning Journey]  
-tags: [cloud]  
+categories: [Technology]  
+tags: [aws]  
 ---
 Some quick notes for preparing the exam of AWS Certified Solutions Architect Associate SAA-C03.
 

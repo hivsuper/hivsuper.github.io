@@ -1,8 +1,8 @@
 ---
 title: 在Visual Studio Code中创建一个带xUnit的简单C#项目  
 date: 2023-08-29 23:00:00 +0800  
-categories: [Technology, C# Learning Journey]  
-tags: [c#, xUnit]  
+categories: [Technology]  
+tags: [c#, xUnit, vscode]  
 ---
 最近几周一直在写C#，接触到了一些有意思的东西，于是记录一下。  
 

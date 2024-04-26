@@ -1,8 +1,8 @@
 ---
 title: 在Visual Studio Code中安装Library并测试C# BouncyCastle加解密  
 date: 2024-01-13 18:47:00 +0800  
-categories: [Technology, C# Learning Journey]  
-tags: [c#, xUnit, NuGet]  
+categories: [Technology]  
+tags: [c#, xUnit, NuGet, vscode]  
 ---
 在[前文](/posts/在Visual-Studio-Code中创建一个带xUnit的简单C-项目/)基础上，增加一些特性：
 - 支持多个`Main`方法

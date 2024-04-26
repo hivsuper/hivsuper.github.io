@@ -1,7 +1,7 @@
 ---
 title: Install Kafka in KRaft Mode Using Docker  
 date: 2024-04-19 18:14:00 +0800  
-categories: [Technology, Kafka Learning Journey]  
+categories: [Technology, A Simple Application Using spring-kafka]  
 tags: [kafka]  
 ---
 Apache Kafka® Raft (KRaft) is the consensus protocol that was introduced to remove Kafka’s dependency on ZooKeeper for metadata management. This greatly simplifies Kafka’s architecture by consolidating responsibility for metadata into Kafka itself.   
