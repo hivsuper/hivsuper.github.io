@@ -31,7 +31,7 @@ tags: [docker]
  Status: Downloaded newer image for ubuntu:latest
 ```
 
-### 5. <a name="5" style="text-decoration:none;color:inherit">在PowerShell运行`docker images`查看image</a>
+### 5. <a href="#" name="5" style="text-decoration:none;color:inherit">在PowerShell运行`docker images`查看image</a>
 ```
 REPOSITORY          TAG                 IMAGE ID            CREATED             SIZE
 ubuntu              latest              4e2eef94cd6b        16 hours ago        73.9MB

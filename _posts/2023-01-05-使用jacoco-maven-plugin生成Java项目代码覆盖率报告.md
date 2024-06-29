@@ -174,10 +174,10 @@ Maven命令及输出如下
 ```
 mvn clean verify -P coverage -DskipITs=true -Dmaven.test.skip=false -Dskip.repackage=true -f pom.xml
 ```
-<img src="/assets/img/202301/571584-20230105180150744-234625221.png" width="800" />
+<img alt="mvn clean verify" src="/assets/img/202301/571584-20230105180150744-234625221.png" width="800" />
 
 如下图所示，Integration test都被跳过
-<img src="/assets/img/202301/571584-20230105180442371-702530813.png" width="800" />
+<img alt="Skip Integration test" src="/assets/img/202301/571584-20230105180442371-702530813.png" width="800" />
 
 打开target/jacoco-ut中的报告
 ![](/assets/img/202301/571584-20230105180620761-254060611.png)
@@ -191,9 +191,9 @@ Maven命令及输出如下
 ```
 mvn clean verify -P coverage -DskipITs=false -Dmaven.test.skip=false -Dskip.repackage=true -f pom.xml
 ```
-<img src="/assets/img/202301/571584-20230105181532021-1336864426.png" width="800" />
+<img alt="mvn clean verify" src="/assets/img/202301/571584-20230105181532021-1336864426.png" width="800" />
 如下图所示，Integration test都包括
-<img src="/assets/img/202301/571584-20230105184700358-2077180040.png" width="800" />
+<img alt="Integration test" src="/assets/img/202301/571584-20230105184700358-2077180040.png" width="800" />
 
 ### 3.3 使用mvn test + Unit test生成代码覆盖率
 修改jacoco-maven-plugin配置
@@ -226,9 +226,9 @@ Maven命令及输出如下
 ```
 clean test -P coverage org.jacoco:jacoco-maven-plugin:report -Dmaven.test.skip=false -Dskip.repackage=true -f pom.xml
 ```
-<img src="/assets/img/202301/571584-20230105182846460-466961631.png" width="800" />
+<img alt="clean test" src="/assets/img/202301/571584-20230105182846460-466961631.png" width="800" />
 
-<img src="/assets/img/202301/571584-20230105182951795-1214187590.png" width="800" />
+<img alt="clean test" src="/assets/img/202301/571584-20230105182951795-1214187590.png" width="800" />
 
 在target\site\jacoco中打开报告
 ![](/assets/img/202301/571584-20230105183740682-408458613.png)

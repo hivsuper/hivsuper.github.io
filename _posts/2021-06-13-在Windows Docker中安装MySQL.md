@@ -34,7 +34,7 @@ d53b544bd61131e960f6983acfb3392a37283b5d469ce782c1f0210d71d7fadc
 docker run -v {VOLUME PATH}:/var/lib/mysql --name test-mysql -p 3306:3306 -e MYSQL_ROOT_PASSWORD=123456 -d mysql:5.7.34
 ```
 {VOLUME PATH}为数据持久化的位置，初始化时该文件夹必须为空
-<img src="/assets/img/202106/571584-20210613115934679-1617487219.png" width="800" />
+<img alt="持久化" src="/assets/img/202106/571584-20210613115934679-1617487219.png" width="800" />
 
 ### 4. 宿主机连接
 ![](/assets/img/202106/571584-20210613031019599-2102506754.png)
@@ -49,4 +49,4 @@ GRANT ALL ON {DATABASE}.* TO '{USERNAME}'@'%';
 
 ### 6. 用新用户登录
 `docker exec -it {CONTAINER ID} mysql -u {USERNAME} -p`
-<img src="/assets/img/202106/571584-20210613031632535-1984418504.png" width="800" />
+<img alt="新用户登录" src="/assets/img/202106/571584-20210613031632535-1984418504.png" width="800" />
