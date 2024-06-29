@@ -51,8 +51,18 @@ Installing jekyll-theme-chirpy 7.0.1
 Bundler attempted to update jekyll-theme-chirpy but its version stayed the same
 Bundle updated!
 ```
+## 5. Deploy in new terminal
+```shell
+root@ffffffffffff:/# cd {DOCKER_PATH}/hivsuper.github.io
+root@ffffffffffff:{DOCKER_PATH}/hivsuper.github.io# /bin/bash --login
+root@ffffffffffff:{DOCKER_PATH}/hivsuper.github.io# rvm default
+root@ffffffffffff:{DOCKER_PATH}/hivsuper.github.io# bundle exec jekyll s --host 0.0.0.0
+...
+    Server address: http://0.0.0.0:4000/
+  Server running... press ctrl-c to stop.
+```
 
-## 5. References
+## 6. References
 - [Upgrade Guide](https://github.com/cotes2020/jekyll-theme-chirpy/wiki/Upgrade-Guide)
 - [Setting the default Ruby](https://rvm.io/rubies/default)
 - [RVM package for Ubuntu](https://github.com/rvm/ubuntu_rvm)
