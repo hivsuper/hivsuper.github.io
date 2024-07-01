@@ -1,11 +1,11 @@
 ---
-title: Upgrade jekyll-theme-chirpy v7.0.1  
+title: Upgrade jekyll-theme-chirpy to v7.0.1  
 date: 2024-06-29 21:19:00 +0800  
 categories: [Github Pages]  
 tags: [jekyll-theme-chirpy]  
 ---
 ## 1. Overview
-The document outlines the process of upgrading `jekyll-theme-chirpy` <u>v7.0.1</u> from starter.
+The document outlines the process of upgrading `jekyll-theme-chirpy` to <u>v7.0.1</u> from starter.
 
 ## 2. Prerequisites
 + The Github Pages project has been set up with `jekyll-theme-chirpy` [v5.5.2](/posts/Initialization-Log/)

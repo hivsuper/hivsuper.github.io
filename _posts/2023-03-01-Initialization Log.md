@@ -39,8 +39,9 @@ root@ffffffffffff:{DOCKER_PATH}/hivsuper.github.io# bundle
 ```
 
 ## 5. Configure for GitHub Pages
-1. Create a round corner image via [image-round](https://www.dute.org/image-round) and create favicons with [favicon generator](https://www.favicon-generator.org/), then follow [tutorial](https://chirpy.cotes.page/posts/customize-the-favicon/) to place them. 
-2. [Usage](https://chirpy.cotes.page/posts/getting-started/#usage) to modify files. See [#1](https://github.com/hivsuper/hivsuper.github.io/pull/1) for more details.
+1. Crop a squre image via [iloveimg](https://www.iloveimg.com/zh-cn/crop-image)
+2. Create a round corner image via [image-round](https://www.dute.org/image-round) and create favicons with [favicon generator](https://realfavicongenerator.net/), then follow [tutorial](https://chirpy.cotes.page/posts/customize-the-favicon/) to place them. 
+3. [Usage](https://chirpy.cotes.page/posts/getting-started/#usage) to modify files. See [#1](https://github.com/hivsuper/hivsuper.github.io/pull/1) for more details.
 
 ## 6. Deploy
 After Installing `giscus`, get `data-repo`, `data-repo-id`, `data-category` and `data-category-id` according to [giscus guide](https://vuepress-theme-hope.github.io/v2/comment/guide/giscus.html) and configure them in [#2](https://github.com/hivsuper/hivsuper.github.io/pull/2). Run `bundle exec jekyll s --host 0.0.0.0` to review pages
