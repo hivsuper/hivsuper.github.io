@@ -2,7 +2,7 @@
 title: Windows 11使用Docker搭建一个简单的Node.js服务  
 date: 2024-08-23 00:56:00 +0800  
 categories: [Technology]  
-tags: [Node.js]  
+tags: [node.js]  
 ---
 最近接触到一种使用 Node.js 创建服务的方法，该方法支持 HTTPS，个人非常喜欢这种极其轻量级的方案，因此特地记录此文。
 
@@ -63,7 +63,7 @@ app.listen(PORT, () => {
 
 ## 4. 配置并启动
 进入容器 `node-dev` 执行如下命令：  
-```
+```shell
 cd /tmp/study-nodejs/
 npm init -y
 npm install express
@@ -75,7 +75,7 @@ node server.js
 ![Commands In Docker](/assets/img/202408/NodeJs-2.png){: width="800" }
 
 ## 6. 安装openssl并创建证书
-```
+```shell
 apk upgrade --update-cache --available && apk add openssl && rm -rf /var/cache/apk/*
 openssl req -nodes -new -x509 -keyout server.key -out server.cert
 ```
@@ -114,11 +114,11 @@ https.createServer(options, app).listen(PORT, () => {
 ```
 
 ## 8. 启动服务并验证
-```
+```shell
 /tmp/study-nodejs # node server.js 
 Server is running at https://localhost:3000
 ```
 ![Commands In Docker](/assets/img/202408/NodeJs-4.png){: width="800" }
 
 ## 9. 总结
-本文介绍了如何使用Docker搭建一个简单的Node.js服务并开启本地HTTPS，完整的源代码可以在[GitHub](https://github.com/hivsuper/learning-journey/tree/master/study-nodejs)中查看。
+本文介绍了如何使用Docker在本地搭建一个简单的Node.js服务并开启HTTPS，完整的源代码可以在[GitHub](https://github.com/hivsuper/learning-journey/tree/master/study-nodejs)中查看。
