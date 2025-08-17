@@ -4,7 +4,12 @@ date: 2020-08-21 22:41:00 +0800
 categories: [CNBlogs]  
 tags: [docker]  
 ---
-<a href="https://www.cnblogs.com/hiver/p/13543739.html" target="_blank">点击查看原文</a>  
+<a href="https://www.cnblogs.com/hiver/p/13543739.html" target="_blank">点击查看原文</a> 
+------------------------------------------------------------------------
+
+2025-08-17 添加Docker image的导出导入方法
+
+------------------------------------------------------------------------
 ### 1. 参考资料
 + [ubuntu docker 开启ssh](https://blog.csdn.net/qq_27068845/article/details/77015432)
 + [docker - 容器里安装ssh](https://www.cnblogs.com/sunshine-2015/p/6384471.html)
@@ -68,9 +73,15 @@ test/ubuntu         latest              38416deebfd4        52 seconds ago      
 ubuntu              latest              4e2eef94cd6b        16 hours ago        73.9MB
 ```
 
-#### 9.2 删除
+#### 9.2 导出
+* 在PowerShell运行`docker save -o {file.name} {REPOSITORY}:{TAG}`导出image
+
+#### 9.3 删除
 * [在PowerShell运行`docker images`查看image](#5)
 * 在PowerShell运行`docker image rm {IMAGE ID}`或`docker image rm {REPOSITORY}`删除对应的docker image
+
+#### 9.4 导入
+* 在PowerShell运行`docker load -i {file.name}`导入image
 
 ### 10. 关闭docker进程
 * 关闭特定进程：在PowerShell运行`docker kill {CONTAINER ID}`
